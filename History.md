@@ -1,5 +1,9 @@
 ## History
 
+- v2.3.1 October 21, 2012
+	- Hopefully fixed `EMFILE` errors
+	- Changed [bal-util](http://balupton.com/project/bal-util) min version from 1.3.x to 1.3.8
+
 - v2.3.0 September 1, 2012
 	- Use the `requireLibraries` option to require sass libaries
 		- Thanks to [Jan Jolkmeier](https://github.com/jouz) for [pull request #14](https://github.com/bevry/docpad-extras/pull/14)
