@@ -21,7 +21,7 @@ Convention:  `.css.sass|scss`
 For information on customising your plugin configuration you can refer to the [DocPad FAQ](https://github.com/bevry/docpad/wiki/FAQ)
 
 ### Compass Support
-You can add support for compass by setting the `compass` option to `true` in the plugin's configuration. By default, we do not add this support.
+We automatically detect if you have compass installed, and if you do, then we'll use it. If our detection fails and you want to still use it, then set the `compass` option to `true`. If you have compass installed but don't want to use it then set the `compass` option to `false`.
 
 ### Output Style
 You can set the `outputStyle` option to any of the supported [output styles](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#output_style). Those being `nested`, `expanded`, `compact`, and `compressed`. By default, we use the `compressed` mode for all environments, except the development mode where it is set to `expanded`.
