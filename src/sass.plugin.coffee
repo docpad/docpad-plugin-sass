@@ -11,13 +11,46 @@ module.exports = (BasePlugin) ->
 		# Plugin config
 		# Only on the development environment use expanded, otherwise use compressed
 		config:
-			compass: false
+			sassPath: null
+			scssPath: null
+			compass: null
 			outputStyle: 'compressed'
 			requireLibraries: null
 			renderUnderscoreStylesheets: false
 			environments:
 				development:
 					outputStyle: 'expanded'
+
+		# Locale
+		locale:
+			sassNotInstalled: 'SASS does not appear to be available on your system'
+			scssNotInstalled: 'SCSS does not appear to be available on your system'
+
+		# Generate Before
+		generateBefore: (opts,next) ->
+			# Prepare
+			config = @config
+
+			# Group
+			tasks = new balUtil.Group(next)
+
+			# Determine if compass is installed
+			if config.compass is null
+				tasks.push (complete) ->
+					balUtil.getExecPath 'compass', (err,path) ->
+						config.compass = path?
+						return complete()
+
+			# Determine sass executable path
+			balUtil.each ['sass','scss'], (thing) ->
+				if config[thing+'Path'] is null
+					tasks.push (complete) ->
+						balUtil.getExecPath thing, (err,path) ->
+							config[thing+'Path'] = path ? false
+							return complete()
+
+			# Fire tasks
+			tasks.async()
 
 		# Prevent underscore
 		extendCollections: (opts) ->
@@ -38,6 +71,7 @@ module.exports = (BasePlugin) ->
 		render: (opts,next) ->
 			# Prepare
 			config = @config
+			locale = @locale
 			{inExtension,outExtension,file} = opts
 
 			# If SASS/SCSS then render
@@ -47,7 +81,13 @@ module.exports = (BasePlugin) ->
 
 				# Prepare the command and options
 				commandOpts = {stdin:opts.content}
-				command = [inExtension, '--stdin', '--no-cache']
+				execPath = config[inExtension+'Path']
+
+				# Check if we have the executable for that extension
+				return next(new Error(locale[inExtension+'NotInstalled']))  unless execPath
+
+				# Build our command
+				command = [execPath, '--stdin', '--no-cache']
 				if fullDirPath
 					command.push('--load-path')
 					command.push(fullDirPath)

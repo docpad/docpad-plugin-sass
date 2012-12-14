@@ -1,5 +1,10 @@
 ## History
 
+- v2.4.0 December 14, 2012
+	- We now detect is sass and scss are actually available to us, and if we try to use one of them when it isn't, we will get an appropriate error
+	- We now detect if compass is available, if it is, then we use it
+	- Updated bal-util dependency and coffee-script dev dependency
+ 
 - v2.3.1 October 21, 2012
 	- Hopefully fixed `EMFILE` errors
 	- Changed [bal-util](http://balupton.com/project/bal-util) min version from 1.3.x to 1.3.8
