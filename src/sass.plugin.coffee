@@ -96,6 +96,8 @@ module.exports = (BasePlugin) ->
 				if config.outputStyle
 					command.push('--style')
 					command.push(config.outputStyle)
+				if config.debugInfo
+					command.push('--debug-info')
 				if config.requireLibraries
 					for name in config.requireLibraries
 						command.push('--require')
