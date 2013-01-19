@@ -1,5 +1,9 @@
 ## History
 
+- v2.4.1 December 14, 2012
+	- Added `debugInfo` config option
+		- Closes [pull request #1](https://github.com/docpad/docpad-plugin-sass/pull/1) thanks to [Johannes Troeger](https://github.com/designaholic)
+
 - v2.4.0 December 14, 2012
 	- We now detect is sass and scss are actually available to us, and if we try to use one of them when it isn't, we will get an appropriate error
 	- We now detect if compass is available, if it is, then we use it
