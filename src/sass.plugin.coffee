@@ -14,6 +14,7 @@ module.exports = (BasePlugin) ->
 			sassPath: null
 			scssPath: null
 			compass: null
+			debugInfo: false
 			outputStyle: 'compressed'
 			requireLibraries: null
 			renderUnderscoreStylesheets: false
@@ -93,11 +94,11 @@ module.exports = (BasePlugin) ->
 					command.push(fullDirPath)
 				if config.compass
 					command.push('--compass')
+				if config.debugInfo
+					command.push('--debug-info')
 				if config.outputStyle
 					command.push('--style')
 					command.push(config.outputStyle)
-				if config.debugInfo
-					command.push('--debug-info')
 				if config.requireLibraries
 					for name in config.requireLibraries
 						command.push('--require')

@@ -1,6 +1,6 @@
 {
 	"name": "docpad-plugin-sass",
-	"version": "2.4.0",
+	"version": "2.4.1",
 	"description": "Adds support for the SASS and SCSS CSS pre-processors to DocPad. It also supports the Compass framework.",
 	"homepage": "http://docpad.org/plugin/sass",
 	"keywords": [
@@ -22,24 +22,25 @@
 	],
 	"contributors": [
 		"Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
-		"Jan Kolkmeier <jankolkmeier@gmail.com> (http://kolkmeier.com/)"
+		"Jan Kolkmeier <jankolkmeier@gmail.com> (http://kolkmeier.com/)",
+		"Johannes Troeger (https://github.com/designaholic)"
 	],
 	"bugs": {
-		"url": "https://github.com/bevry/docpad-extras/issues"
+		"url": "http://docpad.org/plugin/sass/issues"
 	},
 	"repository" : {
 		"type": "git",
-		"url": "http://github.com/bevry/docpad-extras.git"
+		"url": "https://github.com/docpad/docpad-plugin-sass.git"
 	},
 	"engines" : {
-		"node": ">=0.4.0",
-		"docpad": ">=6.3.x <7.0.0"
+		"node": ">=0.4",
+		"docpad": ">=6.3 <7"
 	},
 	"dependencies": {
-		"bal-util": "~1.14.1"
+		"bal-util": "~1.15.4"
 	},
 	"devDependencies": {
-		"coffee-script": "1.4.x"
+		"coffee-script": "~1.4.0"
 	},
 	"main": "./out/sass.plugin.js",
 	"scripts": {
