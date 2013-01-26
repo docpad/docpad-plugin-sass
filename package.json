@@ -18,11 +18,12 @@
 	],
 	"author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
 	"maintainers": [
-		"Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
+		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
 	],
 	"contributors": [
-		"Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
-		"Jan Kolkmeier <jankolkmeier@gmail.com> (http://kolkmeier.com/)",
+		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
+		"Jan Kolkmeier <jankolkmeier@gmail.com> (https://github.com/jouz)",
+		"Merrick Christensen <merrick.christensen@gmail.com> (https://github.com/iammerrick)",
 		"Johannes Troeger (https://github.com/designaholic)"
 	],
 	"bugs": {
