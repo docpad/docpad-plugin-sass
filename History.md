@@ -1,5 +1,10 @@
 ## History
 
+- v2.4.2 January 26, 2013
+	- Node v0.9 support
+	- Updated dependencies
+		- [bal-util](https://github.com/balupton/bal-util) from ~1.15.4 to ~1.16.1
+
 - v2.4.1 December 14, 2012
 	- Added `debugInfo` config option
 		- Closes [pull request #1](https://github.com/docpad/docpad-plugin-sass/pull/1) thanks to [Johannes Troeger](https://github.com/designaholic)
