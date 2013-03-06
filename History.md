@@ -1,5 +1,11 @@
 ## History
 
+- v2.4.3 March 7, 2013
+	- More stringent empty checks of paths
+	- Repackaged
+	- Dependency upgrades
+		-  `bal-util` ~1.16.1 to ~1.16.8
+
 - v2.4.2 January 26, 2013
 	- Node v0.9 support
 	- Updated dependencies
