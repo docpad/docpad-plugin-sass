@@ -36,7 +36,7 @@ module.exports = (BasePlugin) ->
 			tasks = new balUtil.Group(next)
 
 			# Determine if compass is installed
-			if config.compass is null
+			unless config.compass?
 				tasks.push (complete) ->
 					balUtil.getExecPath 'compass', (err,path) ->
 						config.compass = path?
@@ -44,7 +44,7 @@ module.exports = (BasePlugin) ->
 
 			# Determine sass executable path
 			balUtil.each ['sass','scss'], (thing) ->
-				if config[thing+'Path'] is null
+				unless config[thing+'Path']?
 					tasks.push (complete) ->
 						balUtil.getExecPath thing, (err,path) ->
 							config[thing+'Path'] = path ? false
