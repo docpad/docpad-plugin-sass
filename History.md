@@ -1,5 +1,8 @@
 ## History
 
+- v2.4.4 April 1, 2013
+	- Dependency upgrades
+
 - v2.4.3 March 7, 2013
 	- More stringent empty checks of paths
 	- Repackaged
