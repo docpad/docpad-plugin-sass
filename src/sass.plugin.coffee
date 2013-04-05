@@ -2,6 +2,7 @@
 module.exports = (BasePlugin) ->
 	# Requires
 	balUtil = require('bal-util')
+	{TaskGroup} = require('taskgroup')
 
 	# Define Plugin
 	class SassPlugin extends BasePlugin
@@ -33,25 +34,25 @@ module.exports = (BasePlugin) ->
 			config = @config
 
 			# Group
-			tasks = new balUtil.Group(next)
+			tasks = new TaskGroup().setConfig(concurrency:0).once('complete',next)
 
 			# Determine if compass is installed
 			unless config.compass?
-				tasks.push (complete) ->
+				tasks.addTask (complete) ->
 					balUtil.getExecPath 'compass', (err,path) ->
 						config.compass = path?
 						return complete()
 
 			# Determine sass executable path
-			balUtil.each ['sass','scss'], (thing) ->
+			['sass','scss'].forEach (thing) ->
 				unless config[thing+'Path']?
-					tasks.push (complete) ->
+					tasks.addTask (complete) ->
 						balUtil.getExecPath thing, (err,path) ->
 							config[thing+'Path'] = path ? false
 							return complete()
 
 			# Fire tasks
-			tasks.async()
+			tasks.run()
 
 		# Prevent underscore
 		extendCollections: (opts) ->
