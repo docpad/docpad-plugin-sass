@@ -21,7 +21,7 @@ Convention:  `.css.sass|scss`
 For information on customising your plugin configuration you can refer to the [DocPad FAQ](https://github.com/bevry/docpad/wiki/FAQ)
 
 ### Sass and Scss Paths
-We automatically detect the path to your sass and scss executables, however sometimes that doesn't work. If our detection fails and you'll have to specify the path to your sass and scss executables with the `sassPath` and `scssPath` config options.
+We automatically detect the path to your sass and scss executables, however sometimes that doesn't work and you will get `ENOENT` errors. If our detection fails and you'll have to manually specify the path to your sass and scss executables with the `sassPath` and `scssPath` config options, [more info here](https://github.com/docpad/docpad-plugin-sass/issues/6).
 
 ### Compass Support
 We automatically detect if you have compass installed, and if you do, then we'll use it. If our detection fails and you want to still use it, then set the `compass` option to `true`. If you have compass installed but don't want to use it then set the `compass` option to `false`.
