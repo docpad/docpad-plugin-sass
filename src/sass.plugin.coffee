@@ -1,7 +1,7 @@
 # Export Plugin
 module.exports = (BasePlugin) ->
 	# Requires
-	balUtil = require('bal-util')
+	safeps = require('safeps')
 	{TaskGroup} = require('taskgroup')
 
 	# Define Plugin
@@ -39,7 +39,7 @@ module.exports = (BasePlugin) ->
 			# Determine if compass is installed
 			unless config.compass?
 				tasks.addTask (complete) ->
-					balUtil.getExecPath 'compass', (err,path) ->
+					safeps.getExecPath 'compass', (err,path) ->
 						config.compass = path?
 						return complete()
 
@@ -47,7 +47,7 @@ module.exports = (BasePlugin) ->
 			['sass','scss'].forEach (thing) ->
 				unless config[thing+'Path']?
 					tasks.addTask (complete) ->
-						balUtil.getExecPath thing, (err,path) ->
+						safeps.getExecPath thing, (err,path) ->
 							config[thing+'Path'] = path ? false
 							return complete()
 
@@ -106,7 +106,7 @@ module.exports = (BasePlugin) ->
 						command.push(name)
 
 				# Spawn the appropriate process to render the content
-				balUtil.spawn command, commandOpts, (err,stdout,stderr,code,signal) ->
+				safeps.spawn command, commandOpts, (err,stdout,stderr,code,signal) ->
 					return next(err)  if err
 					opts.content = stdout
 					return next()
