@@ -1,5 +1,9 @@
 ## History
 
+- v2.6.0 June 29, 2013
+	- SASS/SCSS files starting with an underscore and containing a dash are now correctly not renderered and written
+		- Thanks to [Savio van Hoi](https://github.com/saviomuc) for [issue #12](https://github.com/docpad/docpad-plugin-sass/issues/12)
+
 - v2.5.1 June 29, 2013
 	- Dependency updates
 
