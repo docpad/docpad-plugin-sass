@@ -13,9 +13,11 @@ Convention:  `.css.sass|scss`
 
 1. [Install Ruby](http://www.ruby-lang.org/en/downloads/)
 
-2. [Install the SASS gem](http://rubygems.org/gems/sass/)
+1. [Install the SASS gem](http://rubygems.org/gems/sass/)
 
-3. Install this plugin
+1. [Optional: Install the Compass gem](http://rubygems.org/gems/compass/)
+
+1. Install this plugin
 
 	```
 	npm install --save docpad-plugin-sass
@@ -29,7 +31,7 @@ For information on customising your plugin configuration you can refer to the [D
 We automatically detect the path to your sass and scss executables, however sometimes that doesn't work and you will get `ENOENT` errors. If our detection fails and you'll have to manually specify the path to your sass and scss executables with the `sassPath` and `scssPath` config options, [more info here](https://github.com/docpad/docpad-plugin-sass/issues/6).
 
 ### Compass Support
-We automatically detect if you have compass installed, and if you do, then we'll use it. If our detection fails and you want to still use it, then set the `compass` option to `true`. If you have compass installed but don't want to use it then set the `compass` option to `false`.
+We automatically detect if you have [compass](http://compass-style.org/) installed, and if you do, then we'll use it. If our detection fails and you want to still use it, then set the `compass` option to `true`. If you have compass installed but don't want to use it then set the `compass` option to `false`.
 
 ### Output Style
 You can set the `outputStyle` option to any of the supported [output styles](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#output_style). Those being `nested`, `expanded`, `compact`, and `compressed`. By default, we use the `compressed` mode for all environments, except the development mode where it is set to `expanded`.
