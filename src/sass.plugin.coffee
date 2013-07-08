@@ -16,7 +16,7 @@ module.exports = (BasePlugin) ->
 			scssPath: null
 			compass: null
 			debugInfo: false
-      sourcemap: false
+			sourcemap: false
 			outputStyle: 'compressed'
 			requireLibraries: null
 			renderUnderscoreStylesheets: false
@@ -98,8 +98,8 @@ module.exports = (BasePlugin) ->
 					command.push('--compass')
 				if config.debugInfo
 					command.push('--debug-info')
-        if config.sourcemap
-          command.push('--sourcemap')
+				if config.sourcemap
+					command.push('--sourcemap')
 				if config.outputStyle
 					command.push('--style')
 					command.push(config.outputStyle)
