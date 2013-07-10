@@ -2,6 +2,7 @@
 module.exports = (BasePlugin) ->
 	# Requires
 	safeps = require('safeps')
+	fs = require('fs')
 	{TaskGroup} = require('taskgroup')
 
 	# Define Plugin
@@ -83,14 +84,13 @@ module.exports = (BasePlugin) ->
 				fullDirPath = file.get('fullDirPath')
 
 				# Prepare the command and options
-				commandOpts = {stdin:opts.content}
 				execPath = config[inExtension+'Path']
 
 				# Check if we have the executable for that extension
 				return next(new Error(locale[inExtension+'NotInstalled']))  unless execPath
 
 				# Build our command
-				command = [execPath, '--stdin', '--no-cache']
+				command = [execPath, file.attributes.fullPath + ':' + file.attributes.outPath, '--no-cache', '--update']
 				if fullDirPath
 					command.push('--load-path')
 					command.push(fullDirPath)
@@ -109,9 +109,9 @@ module.exports = (BasePlugin) ->
 						command.push(name)
 
 				# Spawn the appropriate process to render the content
-				safeps.spawn command, commandOpts, (err,stdout,stderr,code,signal) ->
+				safeps.spawn command, (err,stderr,code,signal) ->
 					return next(err)  if err
-					opts.content = stdout
+					opts.content = fs.readFileSync(file.attributes.outPath).toString()
 					return next()
 
 			else
