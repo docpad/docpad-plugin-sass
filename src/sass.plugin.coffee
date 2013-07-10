@@ -84,13 +84,18 @@ module.exports = (BasePlugin) ->
 				fullDirPath = file.get('fullDirPath')
 
 				# Prepare the command and options
+				commandOpts = {stdin:opts.content}
 				execPath = config[inExtension+'Path']
 
 				# Check if we have the executable for that extension
 				return next(new Error(locale[inExtension+'NotInstalled']))  unless execPath
 
 				# Build our command
-				command = [execPath, file.attributes.fullPath + ':' + file.attributes.outPath, '--no-cache', '--update']
+				if config.sourcemap
+					command = [execPath, file.attributes.fullPath + ':' + file.attributes.outPath, '--no-cache', '--update', '--sourcemap']
+					commandOpts = {}
+				else
+					command = [execPath, '--stdin', '--no-cache']
 				if fullDirPath
 					command.push('--load-path')
 					command.push(fullDirPath)
@@ -98,8 +103,6 @@ module.exports = (BasePlugin) ->
 					command.push('--compass')
 				if config.debugInfo
 					command.push('--debug-info')
-				if config.sourcemap
-					command.push('--sourcemap')
 				if config.outputStyle
 					command.push('--style')
 					command.push(config.outputStyle)
@@ -109,9 +112,12 @@ module.exports = (BasePlugin) ->
 						command.push(name)
 
 				# Spawn the appropriate process to render the content
-				safeps.spawn command, (err,stderr,code,signal) ->
+				safeps.spawn command, commandOpts, (err,stdout,stderr,code,signal) ->
 					return next(err)  if err
-					opts.content = fs.readFileSync(file.attributes.outPath).toString()
+					if config.sourcemap
+						opts.content = fs.readFileSync(file.attributes.outPath).toString()
+					else
+						opts.content = stdout
 					return next()
 
 			else
