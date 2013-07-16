@@ -20,7 +20,7 @@ Convention:  `.css.sass|scss`
 1. Install this plugin
 
 	```
-	npm install --save docpad-plugin-sass
+	docpad install sass
 	```
 
 
