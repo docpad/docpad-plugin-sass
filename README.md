@@ -6,7 +6,7 @@
 
 Adds support for the [SASS and SCSS](http://sass-lang.com/) CSS pre-processors to [DocPad](https://docpad.org). It also supports the [Compass](http://compass-style.org/) framework.
 
-Convention:  `.css.sass|scss`
+Convention:  `.css.(sass|scss)`
 
 
 ## Install
