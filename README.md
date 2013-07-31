@@ -48,7 +48,7 @@ By default we prevent any SASS/SCSS stylesheets that filename starts with unders
 
 
 ## Contributing
-[You can discover the contributing instructions inside the `Contributing.md` file](https://github.com/bevry/docpad-plugin-sass/blob/master/Contributing.md#files)
+[You can discover the contributing instructions inside the `Contributing.md` file](https://github.com/docpad/docpad-plugin-sass/blob/master/Contributing.md#files)
 
 
 ## License
