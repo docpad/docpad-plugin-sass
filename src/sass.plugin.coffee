@@ -15,6 +15,7 @@ module.exports = (BasePlugin) ->
 			sassPath: null
 			scssPath: null
 			compass: null
+			bundler: false
 			debugInfo: false
 			outputStyle: 'compressed'
 			requireLibraries: null
@@ -43,8 +44,17 @@ module.exports = (BasePlugin) ->
 						config.compass = path?
 						return complete()
 
+			# Determine if bundler is installed
+			unless config.bundler?
+				tasks.addTask (complete) ->
+					safeps.getExecPath 'bundle', (err,path) ->
+						config.bundler = path?
+						return complete()
+			
 			# Determine sass executable path
-			['sass','scss'].forEach (thing) ->
+			execsNeeded = ['sass', 'scss']
+			execsNeeded.push('bundle') if config.bundler
+			execsNeeded.forEach (thing) ->
 				unless config[thing+'Path']?
 					tasks.addTask (complete) ->
 						safeps.getExecPath thing, (err,path) ->
@@ -84,6 +94,8 @@ module.exports = (BasePlugin) ->
 				# Prepare the command and options
 				commandOpts = {stdin:opts.content}
 				execPath = config[inExtension+'Path']
+				if config.bundler
+					bundlePath = config['bundlePath'];
 
 				# Check if we have the executable for that extension
 				return next(new Error(locale[inExtension+'NotInstalled']))  unless execPath
@@ -104,6 +116,9 @@ module.exports = (BasePlugin) ->
 					for name in config.requireLibraries
 						command.push('--require')
 						command.push(name)
+				if config.bundler
+					command.unshift('exec')
+					command.unshift(bundlePath)
 
 				# Spawn the appropriate process to render the content
 				safeps.spawn command, commandOpts, (err,stdout,stderr,code,signal) ->
