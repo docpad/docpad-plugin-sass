@@ -2,6 +2,7 @@
 module.exports = (BasePlugin) ->
 	# Requires
 	safeps = require('safeps')
+	fs = require('fs')
 	{TaskGroup} = require('taskgroup')
 
 	# Define Plugin
@@ -16,6 +17,7 @@ module.exports = (BasePlugin) ->
 			scssPath: null
 			compass: null
 			debugInfo: false
+			sourcemap: false
 			outputStyle: 'compressed'
 			requireLibraries: null
 			renderUnderscoreStylesheets: false
@@ -89,7 +91,11 @@ module.exports = (BasePlugin) ->
 				return next(new Error(locale[inExtension+'NotInstalled']))  unless execPath
 
 				# Build our command
-				command = [execPath, '--stdin', '--no-cache']
+				if config.sourcemap
+					command = [execPath, file.attributes.fullPath + ':' + file.attributes.outPath, '--no-cache', '--update', '--sourcemap']
+					commandOpts = {}
+				else
+					command = [execPath, '--stdin', '--no-cache']
 				if fullDirPath
 					command.push('--load-path')
 					command.push(fullDirPath)
@@ -108,7 +114,10 @@ module.exports = (BasePlugin) ->
 				# Spawn the appropriate process to render the content
 				safeps.spawn command, commandOpts, (err,stdout,stderr,code,signal) ->
 					return next(err)  if err
-					opts.content = stdout
+					if config.sourcemap
+						opts.content = fs.readFileSync(file.attributes.outPath).toString()
+					else
+						opts.content = stdout
 					return next()
 
 			else
