@@ -34,8 +34,7 @@
     "url": "https://github.com/docpad/docpad-plugin-sass.git"
   },
   "engines": {
-    "node": ">=0.4",
-    "docpad": ">=6.3 <7"
+    "node": ">=0.4"
   },
   "dependencies": {
     "safeps": "~2.2.6",
