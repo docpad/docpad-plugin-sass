@@ -27,7 +27,7 @@ Convention:  `.css.(sass|scss)`
 
 
 ## Configure
-For information on customising your plugin configuration you can refer to the [DocPad FAQ](https://github.com/bevry/docpad/wiki/FAQ)
+For information on customising your plugin configuration you can refer to the [DocPad FAQ](http://docpad.org/docs/faq)
 
 ### Sass and Scss Paths
 We automatically detect the path to your sass and scss executables, however sometimes that doesn't work and you will get `ENOENT` errors. If our detection fails and you'll have to manually specify the path to your sass and scss executables with the `sassPath` and `scssPath` config options, [more info here](https://github.com/docpad/docpad-plugin-sass/issues/6).
