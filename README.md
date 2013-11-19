@@ -44,6 +44,8 @@ You can set the `requireLibraries` option to an array of extra ruby libraries yo
 ### Render Underscore Stylesheets
 By default we prevent any SASS/SCSS stylesheets that filename starts with underscore character from being rendered and written to the output directory. This is to follow SASS/SCSS convention that such files are just intended to be included inside out stylesheets, and that they are not meant to be rendered by themselves. If you really want to, you can render the underscore stylesheets by setting the `renderUnderscoreStylesheets` option to `true` in your plugin's configuration.
 
+### Bundler Support
+If you use [Bundler](http://bundler.io/) to manage your rubygems, you can execute the Sass compilation using `bundle exec` by setting the `bundler` option to `true`. By default it is set to `false`.
 
 ## History
 [You can discover the history inside the `History.md` file](https://github.com/bevry/docpad-plugin-sass/blob/master/History.md#files)
