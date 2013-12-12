@@ -1,52 +1,68 @@
 {
-	"name": "docpad-plugin-sass",
-	"version": "2.6.0",
-	"description": "Adds support for the SASS and SCSS CSS pre-processors to DocPad. It also supports the Compass framework.",
-	"homepage": "http://docpad.org/plugin/sass",
-	"keywords": [
-		"docpad",
-		"docpad-plugin",
-		"render",
-		"rendering",
-		"sass",
-		"scss",
-		"compass",
-		"stylesheets",
-		"css",
-		"styles",
-		"styling"
-	],
-	"author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
-	"maintainers": [
-		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
-	],
-	"contributors": [
-		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
-		"Jan Kolkmeier <jankolkmeier@gmail.com> (https://github.com/jouz)",
-		"Merrick Christensen <merrick.christensen@gmail.com> (https://github.com/iammerrick)",
-		"Johannes Troeger (https://github.com/johannestroeger)"
-	],
-	"bugs": {
-		"url": "http://docpad.org/plugin/sass/issues"
-	},
-	"repository" : {
-		"type": "git",
-		"url": "https://github.com/docpad/docpad-plugin-sass.git"
-	},
-	"engines" : {
-		"node": ">=0.4",
-		"docpad": ">=6.3 <7"
-	},
-	"dependencies": {
-		"safeps": "~2.2.6",
-		"taskgroup": "~3.1.1"
-	},
-	"devDependencies": {
-		"coffee-script": "~1.6.2",
-		"docpad": ">=6.37 <7"
-	},
-	"main": "./out/sass.plugin.js",
-	"scripts": {
-		"test": "node ./out/sass.test.js"
-	}
+  "name": "docpad-plugin-sass",
+  "version": "2.7.0",
+  "description": "Adds support for the SASS and SCSS CSS pre-processors to DocPad. It also supports the Compass framework.",
+  "homepage": "http://docpad.org/plugin/sass",
+  "license": {
+    "type": "MIT"
+  },
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "gittip": "docpad",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6"
+  },
+  "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "render",
+    "rendering",
+    "sass",
+    "scss",
+    "compass",
+    "stylesheets",
+    "css",
+    "styles",
+    "styling"
+  ],
+  "author": "2012+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "contributors": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
+    "diessicode (https://github.com/diessicode)",
+    "Jan Kolkmeier <jankolkmeier@gmail.com> (https://github.com/jouz)",
+    "Johannes Troeger (https://github.com/johannestroeger)",
+    "Merrick Christensen <merrick.christensen@gmail.com> (https://github.com/iammerrick)",
+    "neilbaylorrulez (https://github.com/neilbaylorrulez)",
+    "patocallaghan (https://github.com/patocallaghan)"
+  ],
+  "bugs": {
+    "url": "http://docpad.org/plugin/sass/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/docpad/docpad-plugin-sass.git"
+  },
+  "engines": {
+    "node": ">=0.4"
+  },
+  "peerDependencies": {
+    "docpad": ">=6.3 <7"
+  },
+  "dependencies": {
+    "safeps": "~2.2.6",
+    "taskgroup": "~3.3.6"
+  },
+  "devDependencies": {
+    "docpad": ">=6.3 <7",
+    "coffee-script": "~1.6.2",
+    "projectz": "~0.3.0"
+  },
+  "main": "./out/sass.plugin.js",
+  "scripts": {
+    "test": "node ./out/sass.test.js"
+  }
 }

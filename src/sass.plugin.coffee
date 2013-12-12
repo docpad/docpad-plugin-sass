@@ -84,28 +84,37 @@ module.exports = (BasePlugin) ->
 				fullDirPath = file.get('fullDirPath')
 
 				# Prepare the command and options
-				commandOpts = {stdin:opts.content}
+				commandOpts = {}
 				execPath = config[inExtension+'Path']
 
 				# Check if we have the executable for that extension
 				return next(new Error(locale[inExtension+'NotInstalled']))  unless execPath
 
 				# Build our command
+				command = [].concat(execPath)
+				# ^ execPath can be an array or string, see https://github.com/docpad/docpad-plugin-sass/pull/26
+
+				# Sourcemaps or stdin?
 				if config.sourcemap
-					command = [execPath, file.attributes.fullPath + ':' + file.attributes.outPath, '--no-cache', '--update', '--sourcemap']
-					commandOpts = {}
+					command = command.push("#{file.attributes.fullPath}:#{file.attributes.outPath}", '--no-cache', '--update', '--sourcemap')
 				else
-					command = [execPath, '--stdin', '--no-cache']
+					command.push('--no-cache', '--stdin')
+					commandOpts.stdin = opts.content
+
 				if fullDirPath
 					command.push('--load-path')
 					command.push(fullDirPath)
+
 				if config.compass
 					command.push('--compass')
+
 				if config.debugInfo
 					command.push('--debug-info')
+
 				if config.outputStyle
 					command.push('--style')
 					command.push(config.outputStyle)
+
 				if config.requireLibraries
 					for name in config.requireLibraries
 						command.push('--require')
