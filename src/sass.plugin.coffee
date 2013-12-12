@@ -89,7 +89,7 @@ module.exports = (BasePlugin) ->
 				return next(new Error(locale[inExtension+'NotInstalled']))  unless execPath
 
 				# Build our command
-				command = [execPath, '--stdin', '--no-cache']
+				command = [].concat(execPath,['--stdin', '--no-cache'])
 				if fullDirPath
 					command.push('--load-path')
 					command.push(fullDirPath)
