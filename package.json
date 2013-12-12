@@ -1,8 +1,16 @@
 {
   "name": "docpad-plugin-sass",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "description": "Adds support for the SASS and SCSS CSS pre-processors to DocPad. It also supports the Compass framework.",
   "homepage": "http://docpad.org/plugin/sass",
+  "license": "MIT",
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "gittip": "docpad",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6"
+  },
   "keywords": [
     "docpad",
     "docpad-plugin",
@@ -16,7 +24,7 @@
     "styles",
     "styling"
   ],
-  "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "author": "2012+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
@@ -36,18 +44,20 @@
   "engines": {
     "node": ">=0.4"
   },
+  "peerDependencies": {
+    "docpad": ">=6.3 <7"
+  },
   "dependencies": {
     "safeps": "~2.2.6",
-    "taskgroup": "~3.1.1"
+    "taskgroup": "~3.3.6"
   },
   "devDependencies": {
-    "coffee-script": "~1.6.2"
+    "docpad": ">=6.3 <7",
+    "coffee-script": "~1.6.2",
+    "projectz": "~0.3.0"
   },
   "main": "./out/sass.plugin.js",
   "scripts": {
     "test": "node ./out/sass.test.js"
-  },
-  "peerDependencies": {
-    "docpad": ">=6.3 <7"
   }
 }
