@@ -1,10 +1,13 @@
 # History
 
-- v2.6.1 December 12, 2013
+- v2.6.2 December 12, 2013
 	- Added bundlr support
 		- Thanks to [Pat O'Callaghan](https://github.com/patocallaghan), [Andrew Kondratev](https://github.com/andruhon), [Carl](https://github.com/erutan) for [pull request #19](https://github.com/docpad/docpad-plugin-sass/pull/19) and [pull request #26](https://github.com/docpad/docpad-plugin-sass/pull/26)
 	- Updated dependencies
 	- Repackaged
+
+- v2.6.1 Unknown
+	- Already published for some reason???
 
 - v2.6.0 June 29, 2013
 	- SASS/SCSS files starting with an underscore and containing a dash are now correctly not renderered and written
