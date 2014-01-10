@@ -96,7 +96,7 @@ module.exports = (BasePlugin) ->
 
 				# Sourcemaps or stdin?
 				if config.sourcemap
-					command = command.push("#{file.attributes.fullPath}:#{file.attributes.outPath}", '--no-cache', '--update', '--sourcemap')
+					command.push("#{file.attributes.fullPath}:#{file.attributes.outPath}", '--no-cache', '--update', '--sourcemap')
 				else
 					command.push('--no-cache', '--stdin')
 					commandOpts.stdin = opts.content
