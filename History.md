@@ -1,5 +1,8 @@
 # History
 
+- v2.7.1 January 28, 2014
+	- We now default `referencesOthers` to true if the less file imports other files
+
 - v2.7.0 December 12, 2013
 	- Added support for sourcemaps
 		- Thanks to [Jimmy King](https://github.com/jking90) for [pull request #15](https://github.com/docpad/docpad-plugin-sass/pull/15)

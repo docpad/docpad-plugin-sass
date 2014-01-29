@@ -90,6 +90,9 @@ module.exports = (BasePlugin) ->
 				# Check if we have the executable for that extension
 				return next(new Error(locale[inExtension+'NotInstalled']))  unless execPath
 
+				# Set referencesOthers if this document imports, as sass concatenates files together
+				file.setMetaDefaults('referencesOthers': true)  if opts.content.indexOf('@import') isnt -1
+
 				# Build our command
 				command = [].concat(execPath)
 				# ^ execPath can be an array or string, see https://github.com/docpad/docpad-plugin-sass/pull/26
