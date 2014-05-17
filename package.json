@@ -14,7 +14,8 @@
     "gittip": "docpad",
     "flattr": "344188/balupton-on-Flattr",
     "paypal": "QB8GQPZAH84N6",
-    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a"
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
   },
   "keywords": [
     "docpad",
@@ -47,7 +48,7 @@
     "patocallaghan (https://github.com/patocallaghan)"
   ],
   "bugs": {
-    "url": "http://docpad.org/plugin/sass/issues"
+    "url": "https://github.com/docpad/docpad-plugin-sass/issues"
   },
   "repository": {
     "type": "git",
@@ -66,10 +67,13 @@
   "devDependencies": {
     "docpad": ">=6.3 <7",
     "coffee-script": "~1.7.0",
-    "projectz": "~0.3.9"
+    "projectz": "~0.3.13"
   },
   "main": "./out/sass.plugin.js",
   "scripts": {
     "test": "node ./out/sass.test.js"
+  },
+  "cakeConfiguration": {
+    "COFFEE_SRC_PATH": "src"
   }
 }
