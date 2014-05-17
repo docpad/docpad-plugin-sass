@@ -3,7 +3,9 @@
   "version": "2.7.1",
   "description": "Adds support for the SASS and SCSS CSS pre-processors to DocPad. It also supports the Compass framework.",
   "homepage": "http://docpad.org/plugin/sass",
-  "license": "MIT",
+  "license": {
+    "type": "MIT"
+  },
   "badges": {
     "travis": true,
     "npm": true,
@@ -32,9 +34,13 @@
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
   "contributors": [
+    "andruhon (https://github.com/andruhon)",
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
+    "diessica (https://github.com/diessica)",
     "diessicode (https://github.com/diessicode)",
     "Jan Kolkmeier <jankolkmeier@gmail.com> (https://github.com/jouz)",
+    "jankolkmeier (https://github.com/jankolkmeier)",
+    "jking90 (https://github.com/jking90)",
     "Johannes Troeger (https://github.com/johannestroeger)",
     "Merrick Christensen <merrick.christensen@gmail.com> (https://github.com/iammerrick)",
     "neilbaylorrulez (https://github.com/neilbaylorrulez)",

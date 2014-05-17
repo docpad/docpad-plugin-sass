@@ -4,9 +4,12 @@
 
 [![Build Status](http://img.shields.io/travis-ci/docpad/docpad-plugin-sass.png?branch=master)](http://travis-ci.org/docpad/docpad-plugin-sass "Check this project's build status on TravisCI")
 [![NPM version](http://badge.fury.io/js/docpad-plugin-sass.png)](https://npmjs.org/package/docpad-plugin-sass "View this project on NPM")
+[![Dependency Status](https://david-dm.org/docpad/docpad-plugin-sass.png?theme=shields.io)](https://david-dm.org/docpad/docpad-plugin-sass)
+[![Development Dependency Status](https://david-dm.org/docpad/docpad-plugin-sass/dev-status.png?theme=shields.io)](https://david-dm.org/docpad/docpad-plugin-sass#info=devDependencies)<br/>
 [![Gittip donate button](http://img.shields.io/gittip/docpad.png)](https://www.gittip.com/docpad/ "Donate weekly to this project using Gittip")
 [![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
 [![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![BitCoin donate button](http://img.shields.io/bitcoin/donate.png?color=yellow)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
 
 <!-- /BADGES -->
 
@@ -99,18 +102,23 @@ No sponsors yet! Will you be the first?
 [![Gittip donate button](http://img.shields.io/gittip/docpad.png)](https://www.gittip.com/docpad/ "Donate weekly to this project using Gittip")
 [![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
 [![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![BitCoin donate button](http://img.shields.io/bitcoin/donate.png?color=yellow)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
 
 ### Contributors
 
 These amazing people have contributed code to this project:
 
-- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton) - [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=balupton)
-- diessicode (https://github.com/diessicode) - [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=diessicode)
-- Jan Kolkmeier <jankolkmeier@gmail.com> (https://github.com/jouz) - [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=jouz)
-- Johannes Troeger (https://github.com/johannestroeger) - [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=johannestroeger)
-- Merrick Christensen <merrick.christensen@gmail.com> (https://github.com/iammerrick) - [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=iammerrick)
-- neilbaylorrulez (https://github.com/neilbaylorrulez) - [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=neilbaylorrulez)
-- patocallaghan (https://github.com/patocallaghan) - [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=patocallaghan)
+- [andruhon](https://github.com/andruhon) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=andruhon)
+- [Benjamin Lupton](https://github.com/balupton) <b@lupton.cc> — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=balupton)
+- [diessica](https://github.com/diessica) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=diessica)
+- [diessicode](https://github.com/diessicode) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=diessicode)
+- [Jan Kolkmeier](https://github.com/jouz) <jankolkmeier@gmail.com> — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=jouz)
+- [jankolkmeier](https://github.com/jankolkmeier) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=jankolkmeier)
+- [jking90](https://github.com/jking90) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=jking90)
+- [Johannes Troeger](https://github.com/johannestroeger) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=johannestroeger)
+- [Merrick Christensen](https://github.com/iammerrick) <merrick.christensen@gmail.com> — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=iammerrick)
+- [neilbaylorrulez](https://github.com/neilbaylorrulez) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=neilbaylorrulez)
+- [patocallaghan](https://github.com/patocallaghan) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=patocallaghan)
 
 [Become a contributor!](https://github.com/docpad/docpad-plugin-sass/blob/master/CONTRIBUTING.md#files)
 
