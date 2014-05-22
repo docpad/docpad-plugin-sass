@@ -119,6 +119,7 @@ These amazing people have contributed code to this project:
 - [jking90](https://github.com/jking90) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=jking90)
 - [Johannes Troeger](https://github.com/johannestroeger) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=johannestroeger)
 - [Merrick Christensen](https://github.com/iammerrick) <merrick.christensen@gmail.com> — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=iammerrick)
+- [moperacz](https://github.com/moperacz) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=moperacz)
 - [neilbaylorrulez](https://github.com/neilbaylorrulez) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=neilbaylorrulez)
 - [patocallaghan](https://github.com/patocallaghan) — [view contributions](https://github.com/docpad/docpad-plugin-sass/commits?author=patocallaghan)
 

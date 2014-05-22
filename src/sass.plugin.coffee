@@ -126,7 +126,7 @@ module.exports = (BasePlugin) ->
 				# Spawn the appropriate process to render the content
 				safeps.spawn command, commandOpts, (err,stdout,stderr,code,signal) ->
 					if err
-						err.message += '\n\n'+stdout  if stdout and !stderr
+						err.message += '\n\n'+(stderr or stdout)
 						return next(err)
 
 					if config.sourcemap
