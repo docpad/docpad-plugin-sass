@@ -1,5 +1,8 @@
 # History
 
+- v2.7.3 May 23, 2014
+	- Better error reporting for sass's bad error reporting
+
 - v2.7.2 May 7, 2014
 	- Fix sourcemaps
 		- Thanks to [moperacz](https://github.com/moperacz) and [Matt Andrews](https://github.com/matthew-andrews) for [pull request #27](https://github.com/docpad/docpad-plugin-sass/pull/27)

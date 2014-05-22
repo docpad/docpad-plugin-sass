@@ -125,11 +125,15 @@ module.exports = (BasePlugin) ->
 
 				# Spawn the appropriate process to render the content
 				safeps.spawn command, commandOpts, (err,stdout,stderr,code,signal) ->
-					return next(err)  if err
+					if err
+						err.message += '\n\n'+stdout  if stdout and !stderr
+						return next(err)
+
 					if config.sourcemap
 						opts.content = fs.readFileSync(file.attributes.outPath).toString()
 					else
 						opts.content = stdout
+
 					return next()
 
 			else
