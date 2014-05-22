@@ -69,6 +69,12 @@ If you want to use bundler you can set something like this in docpad.coffee:
 ```
 
 
+## Troubleshooting
+
+### I get `ERROR: Cannot load compass.`
+Install compass again using: `gem install compass --pre`
+
+
 <!-- HISTORY/ -->
 
 ## History
