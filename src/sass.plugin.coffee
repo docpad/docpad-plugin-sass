@@ -36,7 +36,7 @@ module.exports = (BasePlugin) ->
 			config = @config
 
 			# Group
-			tasks = new TaskGroup().setConfig(concurrency:0).once('complete',next)
+			tasks = new TaskGroup(concurrency:0).done(next)
 
 			# Determine if compass is installed
 			unless config.compass?
