@@ -1,5 +1,12 @@
 # History
 
+## v2.8.0 2017 March 31
+- Improved performance of source map option by moving to an asynchronous call
+- Support `loadPaths` configuration option
+  - Thanks to [Thuong Dinh](https://github.com/zneo99) for [pull request #30](https://github.com/docpad/docpad-plugin-sass/pull/30/files)
+- Updated dependencies
+- Updated base files
+
 ## v2.7.4 2015 March 5
 - Updated dependencies
 

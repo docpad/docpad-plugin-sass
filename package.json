@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-sass",
-  "version": "2.7.4",
+  "version": "2.8.0",
   "description": "Adds support for the SASS and SCSS CSS pre-processors to DocPad. It also supports the Compass framework.",
   "homepage": "https://github.com/docpad/docpad-plugin-sass",
   "license": "MIT",
