@@ -97,8 +97,8 @@
   ],
   "main": "es5/sass.plugin.js",
   "dependencies": {
-    "safeps": "^2.2.6",
-    "taskgroup": "^4.2.0"
+    "safeps": "^6.3.0",
+    "taskgroup": "^5.0.1"
   },
   "devDependencies": {
     "coffee-script": "^1.12.4",

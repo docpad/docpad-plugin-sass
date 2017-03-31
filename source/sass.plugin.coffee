@@ -107,7 +107,7 @@ module.exports = (BasePlugin) ->
 				if fullDirPath
 					command.push('--load-path')
 					command.push(fullDirPath)
-				
+
 				if config.loadPaths
 					config.loadPaths.forEach (loadPath) ->
 						command.push('--load-path')
@@ -129,17 +129,19 @@ module.exports = (BasePlugin) ->
 						command.push(name)
 
 				# Spawn the appropriate process to render the content
-				safeps.spawn command, commandOpts, (err,stdout,stderr,code,signal) ->
+				safeps.spawn command, commandOpts, (err,stdout,stderr) ->
 					if err
-						err.message += '\n\n'+(stderr or stdout)
+						err.message += '\n\n'+(stderr.toString() or stdout.toString())
 						return next(err)
 
 					if config.sourcemap
-						opts.content = fs.readFileSync(file.attributes.outPath).toString()
+						fs.readFile file.attributes.outPath, (err, result) ->
+							return next(err)  if ( err )
+							opts.content = result.toString()
+							return next()
 					else
-						opts.content = stdout
-
-					return next()
+						opts.content = stdout.toString()
+						return next()
 
 			else
 				# Done, return back to DocPad
