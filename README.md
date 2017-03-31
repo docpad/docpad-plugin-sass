@@ -20,7 +20,7 @@ Adds support for the [SASS and SCSS](http://sass-lang.com/) CSS pre-processors t
 
 This SASS/SCSS plugin uses the original ruby implementation, which requires installing ruby and the necessary gems. If you would like to use a native node implementation which would be faster (but no support for 3rd party ruby gems like compass etc) then we'd recommend using [the nodesass plugin](https://github.com/jking90/docpad-plugin-nodesass). [More info here.](https://github.com/docpad/docpad-plugin-sass/issues/11)
 
-Convention:  `.css.(sass|scss)`
+Convention:  `.css.(sass|scss)`. Make sure that you your files are located in `documents` (or `render`) folder as extensions-based rendering happens only [inside this folder](https://docpad.org/docs/overview#the-render-directory).
 
 
 ## Install
