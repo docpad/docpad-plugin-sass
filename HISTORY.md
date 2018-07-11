@@ -1,5 +1,11 @@
 # History
 
+## v2.9.0 2018 July 11
+- If compass failed to load, the error message as to why will now be outputted
+- Updated base files using [boundation](https://github.com/bevry/boundation)
+- Compiled with CoffeeScript v2
+- Updated dependencies
+
 ## v2.8.0 2017 March 31
 - Improved performance of source map option by moving to an asynchronous call
 - Support `loadPaths` configuration option

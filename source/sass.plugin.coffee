@@ -108,6 +108,9 @@ module.exports = (BasePlugin) ->
 					command.push('--load-path')
 					command.push(fullDirPath)
 
+				unless config.requireLibraries
+					config.requireLibraries = []
+
 				if config.loadPaths
 					config.loadPaths.forEach (loadPath) ->
 						command.push('--load-path')
@@ -115,6 +118,8 @@ module.exports = (BasePlugin) ->
 
 				if config.compass
 					command.push('--compass')
+					if config.requireLibraries.indexOf('compass') is -1
+						config.requireLibraries.push('compass')
 
 				if config.debugInfo
 					command.push('--debug-info')
@@ -123,7 +128,7 @@ module.exports = (BasePlugin) ->
 					command.push('--style')
 					command.push(config.outputStyle)
 
-				if config.requireLibraries
+				if config.requireLibraries.length
 					for name in config.requireLibraries
 						command.push('--require')
 						command.push(name)
@@ -131,7 +136,9 @@ module.exports = (BasePlugin) ->
 				# Spawn the appropriate process to render the content
 				safeps.spawn command, commandOpts, (err,stdout,stderr) ->
 					if err
-						err.message += '\n\n'+(stderr.toString() or stdout.toString())
+						err.message += '\n\n' + ((stderr || '').toString() or (stdout || '').toString()).trim()
+						err.message += '\n\nCommand:\n' + command.join(' ')
+						err.message += '\n\nConfiguration:\n' + (JSON.stringify(config, null, '  '))
 						return next(err)
 
 					if config.sourcemap

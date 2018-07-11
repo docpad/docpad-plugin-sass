@@ -10,7 +10,6 @@
 <br class="badge-separator" />
 <span class="badge-patreon"><a href="https://patreon.com/bevry" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
 <span class="badge-opencollective"><a href="https://opencollective.com/bevry" title="Donate to this project using Open Collective"><img src="https://img.shields.io/badge/open%20collective-donate-yellow.svg" alt="Open Collective donate button" /></a></span>
-<span class="badge-gratipay"><a href="https://www.gratipay.com/bevry" title="Donate weekly to this project using Gratipay"><img src="https://img.shields.io/badge/gratipay-donate-yellow.svg" alt="Gratipay donate button" /></a></span>
 <span class="badge-flattr"><a href="https://flattr.com/profile/balupton" title="Donate to this project using Flattr"><img src="https://img.shields.io/badge/flattr-donate-yellow.svg" alt="Flattr donate button" /></a></span>
 <span class="badge-paypal"><a href="https://bevry.me/paypal" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a></span>
 <span class="badge-bitcoin"><a href="https://bevry.me/bitcoin" title="Donate once-off to this project using Bitcoin"><img src="https://img.shields.io/badge/bitcoin-donate-yellow.svg" alt="Bitcoin donate button" /></a></span>
@@ -115,7 +114,6 @@ No sponsors yet! Will you be the first?
 
 <span class="badge-patreon"><a href="https://patreon.com/bevry" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
 <span class="badge-opencollective"><a href="https://opencollective.com/bevry" title="Donate to this project using Open Collective"><img src="https://img.shields.io/badge/open%20collective-donate-yellow.svg" alt="Open Collective donate button" /></a></span>
-<span class="badge-gratipay"><a href="https://www.gratipay.com/bevry" title="Donate weekly to this project using Gratipay"><img src="https://img.shields.io/badge/gratipay-donate-yellow.svg" alt="Gratipay donate button" /></a></span>
 <span class="badge-flattr"><a href="https://flattr.com/profile/balupton" title="Donate to this project using Flattr"><img src="https://img.shields.io/badge/flattr-donate-yellow.svg" alt="Flattr donate button" /></a></span>
 <span class="badge-paypal"><a href="https://bevry.me/paypal" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a></span>
 <span class="badge-bitcoin"><a href="https://bevry.me/bitcoin" title="Donate once-off to this project using Bitcoin"><img src="https://img.shields.io/badge/bitcoin-donate-yellow.svg" alt="Bitcoin donate button" /></a></span>
@@ -132,11 +130,14 @@ These amazing people have contributed code to this project:
 <li><a href="http://kolkmeier.com">Jan Kolkmeier</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=jankolkmeier" title="View the GitHub contributions of Jan Kolkmeier on repository docpad/docpad-plugin-sass">view contributions</a></li>
 <li><a href="https://github.com/jankolkmeier">jankolkmeier</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=jankolkmeier" title="View the GitHub contributions of jankolkmeier on repository docpad/docpad-plugin-sass">view contributions</a></li>
 <li><a href="https://github.com/jking90">jking90</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=jking90" title="View the GitHub contributions of jking90 on repository docpad/docpad-plugin-sass">view contributions</a></li>
-<li><a href="http://johannestroeger.de">Johannes Troeger</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=johannestroeger" title="View the GitHub contributions of Johannes Troeger on repository docpad/docpad-plugin-sass">view contributions</a></li>
+<li><a href="http://johannestroeger.de">Johannes Troeger</a></li>
 <li><a href="http://www.merrickchristensen.com">Merrick Christensen</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=iammerrick" title="View the GitHub contributions of Merrick Christensen on repository docpad/docpad-plugin-sass">view contributions</a></li>
 <li><a href="https://github.com/moperacz">Marcin Operacz</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=moperacz" title="View the GitHub contributions of Marcin Operacz on repository docpad/docpad-plugin-sass">view contributions</a></li>
 <li><a href="www.myplanetdigital.com">Neil Taylor</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=neilbaylorrulez" title="View the GitHub contributions of Neil Taylor on repository docpad/docpad-plugin-sass">view contributions</a></li>
-<li><a href="http://littleglitch.io">Pat O'Callaghan</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=patocallaghan" title="View the GitHub contributions of Pat O'Callaghan on repository docpad/docpad-plugin-sass">view contributions</a></li></ul>
+<li><a href="http://littleglitch.io">Pat O'Callaghan</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=patocallaghan" title="View the GitHub contributions of Pat O'Callaghan on repository docpad/docpad-plugin-sass">view contributions</a></li>
+<li><a href="http://gehtalles.at">Johannes Troeger</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=johannestroeger" title="View the GitHub contributions of Johannes Troeger on repository docpad/docpad-plugin-sass">view contributions</a></li>
+<li><a href="https://github.com/zneo99">Thuong Dinh</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=zneo99" title="View the GitHub contributions of Thuong Dinh on repository docpad/docpad-plugin-sass">view contributions</a></li>
+<li><a href="http://pepelsbey.net/">Vadim Makeev</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=pepelsbey" title="View the GitHub contributions of Vadim Makeev on repository docpad/docpad-plugin-sass">view contributions</a></li></ul>
 
 <a href="https://github.com/docpad/docpad-plugin-sass/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
