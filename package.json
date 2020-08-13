@@ -45,11 +45,7 @@
       "opencollectiveUsername": "bevry",
       "patreonUsername": "bevry",
       "paypalURL": "https://bevry.me/paypal",
-      "wishlistURL": "https://bevry.me/wishlist",
-      "githubUsername": "docpad",
-      "githubRepository": "docpad-plugin-sass",
-      "githubSlug": "docpad/docpad-plugin-sass",
-      "npmPackageName": "docpad-plugin-sass"
+      "wishlistURL": "https://bevry.me/wishlist"
     }
   },
   "funding": "https://bevry.me/fund",
@@ -119,9 +115,9 @@
     "coffeelint": "^2.1.0",
     "coffeescript": "^2.5.1",
     "docpad": "^6.83.1",
-    "docpad-plugintester": "^1.6.2",
+    "docpad-plugintester": "^1.7.2",
     "projectz": "^2.13.0",
-    "valid-directory": "^2.8.0"
+    "valid-directory": "^3.0.0"
   },
   "scripts": {
     "my:setup:sass": "gem install sass --version 3.4.25 && gem install compass --version 1.0.3",
