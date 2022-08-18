@@ -38,7 +38,7 @@
 
 ## v2.7.0 2013 December 12
 
--   Added support for sourcemaps - Thanks to [Jimmy King](https://github.com/jking90) for [pull request #15](https://github.com/docpad/docpad-plugin-sass/pull/15)
+-   Added support for sourcemaps - Thanks to [Jamie King](https://github.com/10xLaCroixDrinker) for [pull request #15](https://github.com/docpad/docpad-plugin-sass/pull/15)
 
 ## v2.6.2 2013 December 12
 
