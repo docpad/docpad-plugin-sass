@@ -23,7 +23,7 @@
 
 Adds support for the [SASS and SCSS](http://sass-lang.com/) CSS pre-processors to [DocPad](https://docpad.org). It also supports the [Compass](http://compass-style.org/) framework.
 
-This SASS/SCSS plugin uses the original ruby implementation, which requires installing ruby and the necessary gems. If you would like to use a native node implementation which would be faster (but no support for 3rd party ruby gems like compass etc) then we'd recommend using [the nodesass plugin](https://github.com/jking90/docpad-plugin-nodesass). [More info here.](https://github.com/docpad/docpad-plugin-sass/issues/11)
+This SASS/SCSS plugin uses the original ruby implementation, which requires installing ruby and the necessary gems. If you would like to use a native node implementation which would be faster (but no support for 3rd party ruby gems like compass etc) then we'd recommend using [the nodesass plugin](https://github.com/docpad/docpad-plugin-nodesass). [More info here.](https://github.com/docpad/docpad-plugin-sass/issues/11)
 
 Convention:  `.css.(sass|scss)`. Make sure that you your files are located in `documents` (or `render`) folder as extensions-based rendering happens only [inside this folder](https://docpad.org/docs/overview#the-render-directory).
 
@@ -135,7 +135,7 @@ These amazing people have contributed code to this project:
 <li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository docpad/docpad-plugin-sass">view contributions</a></li>
 <li><a href="https://github.com/diessica">diessica</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=diessica" title="View the GitHub contributions of diessica on repository docpad/docpad-plugin-sass">view contributions</a></li>
 <li><a href="https://github.com/jankolkmeier">Jan Kolkmeier</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=jankolkmeier" title="View the GitHub contributions of Jan Kolkmeier on repository docpad/docpad-plugin-sass">view contributions</a></li>
-<li><a href="https://github.com/jking90">jking90</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=jking90" title="View the GitHub contributions of jking90 on repository docpad/docpad-plugin-sass">view contributions</a></li>
+<li><a href="https://github.com/10xLaCroixDrinker">Jamie King</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=10xLaCroixDrinker" title="View the GitHub contributions of Jamie King on repository docpad/docpad-plugin-sass">view contributions</a></li>
 <li><a href="http://johannestroeger.de">Johannes Troeger</a></li>
 <li><a href="http://www.merrickchristensen.com">Merrick Christensen</a></li>
 <li><a href="https://github.com/moperacz">Marcin Operacz</a> — <a href="https://github.com/docpad/docpad-plugin-sass/commits?author=moperacz" title="View the GitHub contributions of Marcin Operacz on repository docpad/docpad-plugin-sass">view contributions</a></li>
