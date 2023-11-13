@@ -117,7 +117,7 @@
     "docpad": "^6.83.1",
     "docpad-plugintester": "^1.7.2",
     "projectz": "^2.13.0",
-    "valid-directory": "^3.0.0"
+    "valid-directory": "^4.1.0"
   },
   "scripts": {
     "my:setup:sass": "gem install sass --version 3.4.25 && gem install compass --version 1.0.3",
