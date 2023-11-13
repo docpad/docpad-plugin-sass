@@ -107,7 +107,7 @@
   "main": "edition-esnext/index.js",
   "dependencies": {
     "docpad-baseplugin": "^1.4.0",
-    "safeps": "^10.12.0",
+    "safeps": "^11.1.0",
     "taskgroup": "^7.14.0"
   },
   "devDependencies": {
